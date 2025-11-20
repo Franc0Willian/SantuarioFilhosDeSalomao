@@ -336,11 +336,10 @@ footer > section{
 }
 
 .tela h1 {
-    margin-bottom: 1rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0px;
-    
+    margin-bottom: 0.8vw;
 }
 .tela p {
     padding-left: 8%;
@@ -400,6 +399,7 @@ footer > section{
         display: flex;
     }
     #texto > p > strong{
+        font-size: 1.5rem;
         justify-content: center;
         text-align: center;
     }
