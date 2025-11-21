@@ -122,6 +122,8 @@ main{
     font-family: Helvetica, sans-serif;
 }
 
+/* ---------  Seção fotos ------------*/
+
 #book {
     margin-top: 1rem;
     display: flex;
@@ -130,9 +132,46 @@ main{
     justify-content: center;
 }
 
+#book > a {
+    position: relative;
+    cursor: pointer;
+}
+
 #book > a > img{
     border-radius: 3%;
     height: 90%;
+    filter: grayscale(0%);
+    transition: filter 0.5s ease;
+    transition: transform 0.3s ease;
+}
+
+.mais-icon {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Esconde o ícone inicialmente */
+    color: white; /* Cor do ícone */
+    font-size: 40px; /* Tamanho do ícone */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo para melhor visibilidade */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Esconde o ícone */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animação suave para o ícone */
+}
+
+#book > a:hover img {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+
+}
+#book > a:hover .mais-icon{
+    transform: translate(-50%, -50%) scale(1); /* Exibe e amplia o ícone */
+    opacity: 1; /* Torna o ícone visível */
 }
 
 /* ---------  Menu ------------*/
@@ -147,6 +186,7 @@ main{
         color: var(--cor-principal);
         font-weight: bold;
         border-color: var(--cor-texto);
+        cursor: pointer;
     }
     #menuOFF {
         display: none;
@@ -265,6 +305,10 @@ main{
     height: 700px;
 }
 
+form > input{
+    cursor: pointer;
+}
+
 /* ----------- rodape ------------*/
 
 footer{
@@ -352,6 +396,7 @@ footer > section{
     margin-left: 70%;
     background-color: black;
     color: var(--cor-principal);
+    cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
     width: 4.5rem;
