@@ -635,3 +635,10 @@ footer > section{
         margin-right: 0.9vw;
     }
 }
+@media (min-width: 1900px) {
+    #book {
+        height: 700px;
+        width: 2000px;
+        margin-left: 17vw;
+    }
+}
