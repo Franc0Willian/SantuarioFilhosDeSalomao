@@ -39,37 +39,7 @@ for (let i = 0; i < buttFechar.length; i++) {
   });
 }
 
-/*
-const frm = document.querySelector('form');
-const botaoEnviar = document.getElementById('enviar');
-
-botaoEnviar.addEventListener("click", () => {
-    const campos = frm.querySelectorAll("input[type='text'], input[type='email'], input[type='tel']");
-
-    let valido = true;
-    let dados = {};
-
-    campos.forEach(campo => {
-        if (campo.value.trim() === "") {
-            valido = false;
-            campo.style.border = "2px solid red";
-        } else {
-            campo.style.border = "";
-            dados[campo.previousElementSibling.textContent.replace(":", "").trim()] = campo.value.trim();
-        }
-    });
-
-    if (!valido) {
-        alert("Por favor, preencha todos os campos antes de enviar.");
-        return;
-    }
-
-    localStorage.setItem("contato", JSON.stringify(dados));
-
-    alert("Mensagem enviada com sucesso!");
-    frm.reset();
-});
-*/
+// --- formulario contato ---
 
 const frm = document.querySelector('form');
 const botaoEnviar = document.getElementById('enviar');
