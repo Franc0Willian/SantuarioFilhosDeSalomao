@@ -125,7 +125,7 @@ main{
 /* ---------  Seção fotos ------------*/
 
 #book {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -587,9 +587,9 @@ footer > section{
         width: 25vw;
         height: 30vh;
     }
-    #fotos {
+    /* #fotos {
         height: 700px;
-    }
+    } */
     .tela div{
         width: 100%;
         min-width: min-content;
@@ -608,21 +608,21 @@ footer > section{
     }
 }
 @media (min-width: 1400px) {
-    #book > a {
-        width: 18vw;
-        max-height: 35vh;
+    #book > a{
+        margin: 1rem;
+        width: 17vw;
+        /* height: 35vh; */
     }
-    #fotos {
+    /* #fotos {
         height: 700px;
-    }
+    } */
     #book {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.5rem;
-        width: 80%;
-        margin: 0 auto;
-        height: auto; /* <-- remove altura fixa */
+        /* height: 590px;
+        width: 1000px;
+        margin-left: 17vw; */
+        width: 60%;
+        padding: 10px;
+        margin: 2rem auto;
     }
     .tela {
         width: 50vw;
@@ -638,99 +638,17 @@ footer > section{
         margin-right: 0.9vw;
     }
 }
-
-@media (min-width: 1900px) {
-    #book {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem;
-        width: 80%;
-        margin: 0 auto;
-        padding-bottom: 4rem;
-        height: auto; 
+@media (min-width: 1920px){
+    form{
+        margin: 3% 5% 0% 20%;
     }
-
-    #book > a {
-        width: 13vw;
-        max-height: 32vh;
+    #nomeForm{
+        margin-right: -1.9%;
     }
-/*
-    #fotos {
-        height: auto;
-    }*/
-}
-    
-@media (min-width: 2500px) {
-    #book {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2.5rem;
-        width: 80%;
-        margin: 0 auto;
-        padding-bottom: 4rem;
-        height: auto; 
+    #emailForm{
+        margin-right: -2%;
     }
-
-    #book > a {
-        width: 10vw;     
-        height: 22vh;    
-        min-width: 260px;
-        min-height: 200px;
-    }
-
-    #book > a > img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-        border-radius: 10px;
-    }
-
-   
-    #fotos .sech1 {
-        font-size: 4rem;
-    }
-
-   
-    #fotos .traço {
-        height: 6px;
-        width: 25%;
-    }
-    #fotos .sombra img {
-        height: 45px;
-    }
-
-    .tela {
-        width: 40vw;
-        left: 30%;
-        top: 6rem;
-        height: 80vh;
-    }
-
-    .tela img {
-        max-width: 80%;
-        height: auto;
-    }
-
-    .tela h1 {
-        font-size: 3rem;
-    }
-
-    .tela p {
-        font-size: 1.6rem;
-        line-height: 1.7;
-    }
-
-    .tela button {
-        font-size: 1.4rem;
-        width: 7rem;
-        height: 3rem;
+    #celularForm{
+        margin-right: -2.9%;
     }
 }
-
-
-
-
-
-
